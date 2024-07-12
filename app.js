@@ -256,18 +256,16 @@ Hint: Be sure to declare and initialize the total variable before the iterations
 Complete Exercise 15 in the space below:
 */
 
-const numArrays1 = [
-   [100, 5, 23],
-   [15, 21, 72, 9],
-   [45, 66],
-   [7, 81, 90]
-];
 
 let total = 0;
-numArrays.forEach((element) => {
-   for (let i = 0; i < element.length; i++) {
+numArrays.forEach((pareneElement) => {
+   pareneElement.forEach((childElement) => {
+      total = total + childElement;
+   })
+   
+   /* for (let i = 0; i < element.length; i++) {
       total = total + element[i];
-   }
+      }*/
 })
 
 console.log('Exercise 15 result:\n', total);
