@@ -258,11 +258,11 @@ Complete Exercise 15 in the space below:
 
 
 let total = 0;
-numArrays.forEach((pareneElement) => {
-   pareneElement.forEach((childElement) => {
+numArrays.forEach((parentElement) => {
+   parentElement.forEach((childElement) => {
       total = total + childElement;
    })
-   
+
    /* for (let i = 0; i < element.length; i++) {
       total = total + element[i];
       }*/
