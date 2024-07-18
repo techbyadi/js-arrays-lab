@@ -219,12 +219,13 @@ const numList = numArrays.splice(-1);
 
 // Please review the below code and let me know if this is the optimal way or what else I could do here?
 
-let numList;
-for (let element = numArrays.length - 1; element > 0; element--) {
+
+/* for (let element = numArrays.length - 1; element > 0; element--) {
    numList = numArrays[element];
    break;
-}
+} */
 
+let numList = numArrays[numArrays.length-1];
 
 console.log('Exercise 13 result:', numList);
 
